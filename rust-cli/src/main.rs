@@ -16,7 +16,7 @@ mod traverser;
 #[command(
     name = "codegraph",
     about = "AST-based code graph generator",
-    version = "0.2.5"
+    version = env!("CARGO_PKG_VERSION")
 )]
 struct Cli {
     #[command(subcommand)]
